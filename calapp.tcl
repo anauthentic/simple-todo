@@ -4,8 +4,7 @@ package require struct::tree
 package require struct::list
 
 set wdir [file dirname [info script]]
-tk_messageBox -message [file join [file dirname $wdir] wiki_snippets.tcl]
-source [file join [file dirname $wdir] wiki_snippets.tcl]
+source [file join $wdir wiki_snippets.tcl]
 namespace import snippets::lambda
 source [file join $wdir callib.tcl]
 
